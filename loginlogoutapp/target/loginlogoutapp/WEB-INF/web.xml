@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+         http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+         version="3.0">
+
+    <display-name>LoginLogoutApp</display-name>
+
+    <!-- Welcome file configuration -->
+    <welcome-file-list>
+        <welcome-file>login.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Login Servlet -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <jsp-file>/login.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <!-- Logout Servlet -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <jsp-file>/logout.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <!-- Register Servlet -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <jsp-file>/register.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin Dashboard -->
+    <servlet>
+        <servlet-name>AdminDashboardServlet</servlet-name>
+        <jsp-file>/adminDashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminDashboardServlet</servlet-name>
+        <url-pattern>/adminDashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- Representative Dashboard -->
+    <servlet>
+        <servlet-name>RepDashboardServlet</servlet-name>
+        <jsp-file>/repDashboard.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RepDashboardServlet</servlet-name>
+        <url-pattern>/repDashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- Customer Dashboard -->
+    <servlet>
+        <servlet-name>CustomerDashboardServlet</servlet-name>
+        <jsp-file>/welcome.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerDashboardServlet</servlet-name>
+        <url-pattern>/customerDashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- Search Train Schedules -->
+    <servlet>
+        <servlet-name>SearchTrainServlet</servlet-name>
+        <jsp-file>/search.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchTrainServlet</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+
+    <!-- View Train Schedule Details -->
+    <servlet>
+        <servlet-name>ViewScheduleDetailsServlet</servlet-name>
+        <jsp-file>/viewScheduleDetails.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewScheduleDetailsServlet</servlet-name>
+        <url-pattern>/viewScheduleDetails</url-pattern>
+    </servlet-mapping>
+
+    <!-- Manage Train Schedules -->
+    <servlet>
+        <servlet-name>ManageSchedulesServlet</servlet-name>
+        <jsp-file>/manageSchedules.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ManageSchedulesServlet</servlet-name>
+        <url-pattern>/manageSchedules</url-pattern>
+    </servlet-mapping>
+
+    <!-- View Reservations -->
+    <servlet>
+        <servlet-name>ViewReservationsServlet</servlet-name>
+        <jsp-file>/viewReservations.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewReservationsServlet</servlet-name>
+        <url-pattern>/viewReservations</url-pattern>
+    </servlet-mapping>
+
+    <!-- Help Page -->
+    <servlet>
+        <servlet-name>HelpServlet</servlet-name>
+        <jsp-file>/help.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelpServlet</servlet-name>
+        <url-pattern>/help</url-pattern>
+    </servlet-mapping>
+
+    <!-- Browse Questions -->
+    <servlet>
+        <servlet-name>BrowseQuestionsServlet</servlet-name>
+        <jsp-file>/browseQuestionsAndReplies.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BrowseQuestionsServlet</servlet-name>
+        <url-pattern>/browseQuestions</url-pattern>
+    </servlet-mapping>
+
+    <!-- Search Questions by Keyword -->
+    <servlet>
+        <servlet-name>SearchQuestionsServlet</servlet-name>
+        <jsp-file>/searchQuestions.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SearchQuestionsServlet</servlet-name>
+        <url-pattern>/searchQuestions</url-pattern>
+    </servlet-mapping>
+
+    <!-- Contact Customer Representative -->
+    <servlet>
+        <servlet-name>ContactRepServlet</servlet-name>
+        <servlet-class>ContactRepServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ContactRepServlet</servlet-name>
+        <url-pattern>/contactRep</url-pattern>
+    </servlet-mapping>
+
+    <!-- Customer Questions -->
+    <servlet>
+        <servlet-name>CustomerQuestionsServlet</servlet-name>
+        <jsp-file>/customerQuestions.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CustomerQuestionsServlet</servlet-name>
+        <url-pattern>/customerQuestions</url-pattern>
+    </servlet-mapping>
+
+    <!-- Best Customer -->
+    <servlet>
+        <servlet-name>BestCustomerServlet</servlet-name>
+        <jsp-file>/bestCustomer.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BestCustomerServlet</servlet-name>
+        <url-pattern>/bestCustomer</url-pattern>
+    </servlet-mapping>
+
+    <!-- Top 5 Active Transit Lines -->
+    <servlet>
+        <servlet-name>TopActiveTransitLinesServlet</servlet-name>
+        <jsp-file>/topActiveTransitLines.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TopActiveTransitLinesServlet</servlet-name>
+        <url-pattern>/topActiveTransitLines</url-pattern>
+    </servlet-mapping>
+
+</web-app>

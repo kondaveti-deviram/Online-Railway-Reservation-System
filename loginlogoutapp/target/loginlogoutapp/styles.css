@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Make the body fill the entire viewport */
+body {
+    
+    background-color: #f4f4f9; /* Optional: Add a background color */
+}
+
+.dashboard-buttons {
+    display: flex;
+    flex-wrap: wrap; /* Wrap buttons to the next row if necessary */
+    justify-content: center; /* Center buttons horizontally */
+    gap: 15px; /* Add space between buttons */
+    margin-top: 20px;
+}
+
+
+.action-button {
+    background-color: #00509e;
+    flex: 1 1 200px; /* Allow buttons to grow and shrink, with a base size of 200px */
+    text-align: center;
+    height: 50px; /* Set a fixed height for all buttons */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.logout-button {
+    background-color: #c70039;
+    flex: 1 1 200px; /* Allow buttons to grow and shrink, with a base size of 200px */
+    text-align: center;
+    height: 50px; /* Set a fixed height for all buttons */
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #003366; /* Railway-inspired dark blue */
+    color: #ffffff;
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 5px;
+    letter-spacing: 1px;
+    color: #cce0ff; /* Light blue */
+}
+
+/* Form Styles */
+form {
+    margin: 20px 0;
+}
+
+form label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+}
+
+form input, form select, form textarea, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box;
+}
+
+form button {
+    background-color: #00509e; /* Button blue */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #003366;
+}
+
+/* Register Button Styles */
+.register-button {
+    background-color: #28a745; /* Green background */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%; /* Same width as Login button */
+    box-sizing: border-box;
+    margin-top: 10px; /* Space between Register and Login */
+}
+
+.register-button:hover {
+    background-color: #218838; /* Darker green */
+    transform: scale(1.05); /* Slight hover scaling */
+}
+
+.register-button:active {
+    background-color: #1e7e34; /* Even darker green when clicked */
+    transform: scale(0.98); /* Slight shrink on click */
+}
+
+
+.action-button:hover {
+    background-color: #003366;
+}
+
+
+
+.logout-button:hover {
+    background-color: #900c3f;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1em;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #003366;
+    color: white;
+    text-transform: uppercase;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Success and Error Messages */
+.success {
+    color: green;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Links */
+a {
+    color: #00509e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer (Optional) */
+footer {
+    background-color: #003366;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
